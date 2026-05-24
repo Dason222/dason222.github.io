@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dason222.github.io/page/about/</loc>
-    <lastmod>2026-05-24T19:16:40+03:00</lastmod>
-  </url><url>
     <loc>https://dason222.github.io/</loc>
+    <lastmod>2026-05-24T20:00:00+03:00</lastmod>
+  </url><url>
+    <loc>https://dason222.github.io/page/</loc>
+    <lastmod>2026-05-24T20:00:00+03:00</lastmod>
+  </url><url>
+    <loc>https://dason222.github.io/page/projects/</loc>
+    <lastmod>2026-05-24T20:00:00+03:00</lastmod>
+  </url><url>
+    <loc>https://dason222.github.io/page/about/</loc>
     <lastmod>2026-05-24T19:16:40+03:00</lastmod>
   </url><url>
     <loc>https://dason222.github.io/tags/azure/</loc>
@@ -27,9 +33,6 @@
     <lastmod>2026-05-24T19:16:40+03:00</lastmod>
   </url><url>
     <loc>https://dason222.github.io/tags/nginx/</loc>
-    <lastmod>2026-05-24T19:16:40+03:00</lastmod>
-  </url><url>
-    <loc>https://dason222.github.io/page/</loc>
     <lastmod>2026-05-24T19:16:40+03:00</lastmod>
   </url><url>
     <loc>https://dason222.github.io/posts/</loc>
