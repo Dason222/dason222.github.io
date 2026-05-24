@@ -6,55 +6,20 @@
     <description>Recent content in Tags on Armandas Kaleinykas - Cloud Lab Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 20:47:57 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 19:16:40 +0300</lastBuildDate>
     <atom:link href="https://dason222.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure</title>
       <link>https://dason222.github.io/tags/azure/</link>
-      <pubDate>Sun, 24 May 2026 20:47:57 +0300</pubDate>
+      <pubDate>Sun, 24 May 2026 19:16:40 +0300</pubDate>
       <guid>https://dason222.github.io/tags/azure/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud</title>
       <link>https://dason222.github.io/tags/cloud/</link>
-      <pubDate>Sun, 24 May 2026 20:47:57 +0300</pubDate>
+      <pubDate>Sun, 24 May 2026 19:16:40 +0300</pubDate>
       <guid>https://dason222.github.io/tags/cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>https://dason222.github.io/tags/docker/</link>
-      <pubDate>Sun, 24 May 2026 20:47:57 +0300</pubDate>
-      <guid>https://dason222.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Github-Pages</title>
-      <link>https://dason222.github.io/tags/github-pages/</link>
-      <pubDate>Sun, 24 May 2026 20:47:57 +0300</pubDate>
-      <guid>https://dason222.github.io/tags/github-pages/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo</title>
-      <link>https://dason222.github.io/tags/hugo/</link>
-      <pubDate>Sun, 24 May 2026 20:47:57 +0300</pubDate>
-      <guid>https://dason222.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nginx</title>
-      <link>https://dason222.github.io/tags/nginx/</link>
-      <pubDate>Sun, 24 May 2026 20:47:57 +0300</pubDate>
-      <guid>https://dason222.github.io/tags/nginx/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vgtu</title>
-      <link>https://dason222.github.io/tags/vgtu/</link>
-      <pubDate>Sun, 24 May 2026 20:47:57 +0300</pubDate>
-      <guid>https://dason222.github.io/tags/vgtu/</guid>
       <description></description>
     </item>
     <item>
@@ -62,6 +27,13 @@
       <link>https://dason222.github.io/tags/linux/</link>
       <pubDate>Sun, 24 May 2026 19:16:40 +0300</pubDate>
       <guid>https://dason222.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nginx</title>
+      <link>https://dason222.github.io/tags/nginx/</link>
+      <pubDate>Sun, 24 May 2026 19:16:40 +0300</pubDate>
+      <guid>https://dason222.github.io/tags/nginx/</guid>
       <description></description>
     </item>
   </channel>
