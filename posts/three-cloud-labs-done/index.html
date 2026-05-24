@@ -29,36 +29,16 @@
  
 
 
-  <title>Hello Cloud - setting up nginx on Azure</title>
+  <title>Three cloud labs, three architectures - what I built this semester</title>
 
-  <meta name="description" content="This is my first Hugo post, published as part of the VGTU &ldquo;Cloud Computing&rdquo; 3rd
-laboratory work. Below you will find a picture of the Microsoft Azure logo and
-a code snippet showing how I configured nginx on my Ubuntu Server VM.
-
-nginx site config
-The custom site is served from /home/azureuser/www/index.html. The minimal
-nginx server block looks like this:
-server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
-
-    root /home/azureuser/www;
-    index index.html index.htm;
-
-    server_name mypage.com;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}
-Bringing it up
-sudo apt update
-sudo apt install -y nginx neofetch
-sudo ln -s /etc/nginx/sites-available/mypage /etc/nginx/sites-enabled/
-sudo rm /etc/nginx/sites-enabled/default
-sudo systemctl restart nginx
-sudo systemctl status nginx
-That&rsquo;s it - my page is now live on Microsoft Azure."><script type="application/ld+json">
+  <meta name="description" content="This week I wrapped up the third laboratory work for the VGTU &ldquo;Debesų
+kompiuterija&rdquo; (Cloud Computing) course. Looking back, the three labs together
+form a neat tour of how modern web/game infrastructure is actually deployed -
+from screws-and-bolts manual provisioning, through containers, all the way to
+serverless static hosting. Here is a quick recap.
+Lab 2 - &ldquo;MMO Serveris&rdquo;
+The brief: stand up a private Dark Age of Camelot game server two ways and
+compare them."><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@id": "https://dason222.github.io/#website",
@@ -78,19 +58,19 @@ That&rsquo;s it - my page is now live on Microsoft Azure."><script type="applica
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@id": "https://dason222.github.io/posts/hello-cloud/",
+  "@id": "https://dason222.github.io/posts/three-cloud-labs-done/",
   "@type": "WebPage",
   "breadcrumb": {
-    "@id": "https://dason222.github.io/posts/hello-cloud/#breadcrumb"
+    "@id": "https://dason222.github.io/posts/three-cloud-labs-done/#breadcrumb"
   },
-  "name": "Hello Cloud - setting up nginx on Azure",
-  "url": "https://dason222.github.io/posts/hello-cloud/"
+  "name": "Three cloud labs, three architectures - what I built this semester",
+  "url": "https://dason222.github.io/posts/three-cloud-labs-done/"
 }
 </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@id": "https://dason222.github.io/posts/hello-cloud/#breadcrumb",
+  "@id": "https://dason222.github.io/posts/three-cloud-labs-done/#breadcrumb",
   "@type": "BreadcrumbList",
   "itemListElement": [
     {
@@ -107,8 +87,8 @@ That&rsquo;s it - my page is now live on Microsoft Azure."><script type="applica
     },
     {
       "@type": "ListItem",
-      "item": "https://dason222.github.io/posts/hello-cloud/",
-      "name": "Hello Cloud - setting up nginx on Azure",
+      "item": "https://dason222.github.io/posts/three-cloud-labs-done/",
+      "name": "Three cloud labs, three architectures - what I built this semester",
       "position": 3
     }
   ]
@@ -117,26 +97,29 @@ That&rsquo;s it - my page is now live on Microsoft Azure."><script type="applica
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@id": "https://dason222.github.io/posts/hello-cloud/#article",
+  "@id": "https://dason222.github.io/posts/three-cloud-labs-done/#article",
   "@type": "Article",
   "author": [],
-  "dateCreated": "2026-05-24T19:16:40+03:00",
-  "dateModified": "2026-05-24T19:16:40+03:00",
-  "datePublished": "2026-05-24T19:16:40+03:00",
-  "description": "This is my first Hugo post, published as part of the VGTU “Cloud Computing” 3rd laboratory work. Below you will find a picture of the Microsoft Azure logo and a code snippet showing how I configured nginx on my Ubuntu Server VM.\nnginx site config The custom site is served from /home/azureuser/www/index.html. The minimal nginx server block looks like this:\nserver { listen 80 default_server; listen [::]:80 default_server; root /home/azureuser/www; index index.html index.htm; server_name mypage.com; location / { try_files $uri $uri/ =404; } } Bringing it up sudo apt update sudo apt install -y nginx neofetch sudo ln -s /etc/nginx/sites-available/mypage /etc/nginx/sites-enabled/ sudo rm /etc/nginx/sites-enabled/default sudo systemctl restart nginx sudo systemctl status nginx That’s it - my page is now live on Microsoft Azure.\n",
-  "headline": "Hello Cloud - setting up nginx on Azure",
+  "dateCreated": "2026-05-24T20:47:57+03:00",
+  "dateModified": "2026-05-24T20:47:57+03:00",
+  "datePublished": "2026-05-24T20:47:57+03:00",
+  "description": "This week I wrapped up the third laboratory work for the VGTU “Debesų kompiuterija” (Cloud Computing) course. Looking back, the three labs together form a neat tour of how modern web/game infrastructure is actually deployed - from screws-and-bolts manual provisioning, through containers, all the way to serverless static hosting. Here is a quick recap.\nLab 2 - “MMO Serveris” The brief: stand up a private Dark Age of Camelot game server two ways and compare them.\n",
+  "headline": "Three cloud labs, three architectures - what I built this semester",
   "inLanguage": "en",
   "isPartOf": {
-    "@id": "https://dason222.github.io/posts/hello-cloud/"
+    "@id": "https://dason222.github.io/posts/three-cloud-labs-done/"
   },
   "keywords": [
     "azure",
+    "docker",
+    "hugo",
+    "github-pages",
     "nginx",
-    "linux",
-    "cloud"
+    "cloud",
+    "vgtu"
   ],
   "mainEntityOfPage": {
-    "@id": "https://dason222.github.io/posts/hello-cloud/"
+    "@id": "https://dason222.github.io/posts/three-cloud-labs-done/"
   },
   "publisher": {
     "@type": "Organization",
@@ -148,32 +131,33 @@ That&rsquo;s it - my page is now live on Microsoft Azure."><script type="applica
     },
     "name": "Armandas Kaleinykas - Cloud Lab Blog"
   },
-  "wordCount": 123
+  "wordCount": 579
 }
 </script>
 
 
-<meta property="og:url" content="https://dason222.github.io/posts/hello-cloud/">
+<meta property="og:url" content="https://dason222.github.io/posts/three-cloud-labs-done/">
   <meta property="og:site_name" content="Armandas Kaleinykas - Cloud Lab Blog">
-  <meta property="og:title" content="Hello Cloud - setting up nginx on Azure">
-  <meta property="og:description" content="This is my first Hugo post, published as part of the VGTU “Cloud Computing” 3rd laboratory work. Below you will find a picture of the Microsoft Azure logo and a code snippet showing how I configured nginx on my Ubuntu Server VM.
-nginx site config The custom site is served from /home/azureuser/www/index.html. The minimal nginx server block looks like this:
-server { listen 80 default_server; listen [::]:80 default_server; root /home/azureuser/www; index index.html index.htm; server_name mypage.com; location / { try_files $uri $uri/ =404; } } Bringing it up sudo apt update sudo apt install -y nginx neofetch sudo ln -s /etc/nginx/sites-available/mypage /etc/nginx/sites-enabled/ sudo rm /etc/nginx/sites-enabled/default sudo systemctl restart nginx sudo systemctl status nginx That’s it - my page is now live on Microsoft Azure.">
+  <meta property="og:title" content="Three cloud labs, three architectures - what I built this semester">
+  <meta property="og:description" content="This week I wrapped up the third laboratory work for the VGTU “Debesų kompiuterija” (Cloud Computing) course. Looking back, the three labs together form a neat tour of how modern web/game infrastructure is actually deployed - from screws-and-bolts manual provisioning, through containers, all the way to serverless static hosting. Here is a quick recap.
+Lab 2 - “MMO Serveris” The brief: stand up a private Dark Age of Camelot game server two ways and compare them.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-05-24T19:16:40+03:00">
-    <meta property="article:modified_time" content="2026-05-24T19:16:40+03:00">
+    <meta property="article:published_time" content="2026-05-24T20:47:57+03:00">
+    <meta property="article:modified_time" content="2026-05-24T20:47:57+03:00">
     <meta property="article:tag" content="Azure">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Github-Pages">
     <meta property="article:tag" content="Nginx">
-    <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="Cloud">
 
-<link rel="canonical" href="https://dason222.github.io/posts/hello-cloud/" />
-  <meta name="twitter:title" content="Hello Cloud - setting up nginx on Azure" />
-  <meta name="twitter:description" content="This is my first Hugo post, published as part of the VGTU &ldquo;Cloud Computing&rdquo; 3rd
-laboratory work. Below you will find a picture of the Microsoft Azure logo and
-a code snippet showing how I …">
+<link rel="canonical" href="https://dason222.github.io/posts/three-cloud-labs-done/" />
+  <meta name="twitter:title" content="Three cloud labs, three architectures - what I built this semester" />
+  <meta name="twitter:description" content="This week I wrapped up the third laboratory work for the VGTU &ldquo;Debesų
+kompiuterija&rdquo; (Cloud Computing) course. Looking back, the three labs together
+form a neat tour of how modern web/game …">
   <meta name="twitter:card" content="summary_large_image" />
 
 <meta name="generator" content="Hugo 0.161.1">
@@ -302,7 +286,7 @@ a code snippet showing how I …">
             <div class="posts-heading">
               
               
-                <h1>Hello Cloud - setting up nginx on Azure</h1>
+                <h1>Three cloud labs, three architectures - what I built this semester</h1>
               
               
               
@@ -343,34 +327,96 @@ a code snippet showing how I …">
 
           
 
-          <p>This is my first Hugo post, published as part of the VGTU &ldquo;Cloud Computing&rdquo; 3rd
-laboratory work. Below you will find a picture of the Microsoft Azure logo and
-a code snippet showing how I configured nginx on my Ubuntu Server VM.</p>
-<p><img src="/img/azure-cloud.svg" alt="Microsoft Azure logo"></p>
-<h2 id="nginx-site-config">nginx site config</h2>
-<p>The custom site is served from <code>/home/azureuser/www/index.html</code>. The minimal
-nginx server block looks like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#66d9ef">server</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span> <span style="color:#e6db74">default_server</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">listen</span> <span style="color:#e6db74">[::]:80</span> <span style="color:#e6db74">default_server</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">root</span> <span style="color:#e6db74">/home/azureuser/www</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">index</span> <span style="color:#e6db74">index.html</span> <span style="color:#e6db74">index.htm</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">server_name</span> <span style="color:#e6db74">mypage.com</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">try_files</span> $uri $uri/ =<span style="color:#ae81ff">404</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="bringing-it-up">Bringing it up</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
-</span></span><span style="display:flex;"><span>sudo apt install -y nginx neofetch
-</span></span><span style="display:flex;"><span>sudo ln -s /etc/nginx/sites-available/mypage /etc/nginx/sites-enabled/
-</span></span><span style="display:flex;"><span>sudo rm /etc/nginx/sites-enabled/default
-</span></span><span style="display:flex;"><span>sudo systemctl restart nginx
-</span></span><span style="display:flex;"><span>sudo systemctl status nginx
-</span></span></code></pre></div><p>That&rsquo;s it - my page is now live on Microsoft Azure.</p>
+          <p>This week I wrapped up the third laboratory work for the <strong>VGTU &ldquo;Debesų
+kompiuterija&rdquo;</strong> (Cloud Computing) course. Looking back, the three labs together
+form a neat tour of how modern web/game infrastructure is actually deployed -
+from screws-and-bolts manual provisioning, through containers, all the way to
+serverless static hosting. Here is a quick recap.</p>
+<h2 id="lab-2---mmo-serveris">Lab 2 - &ldquo;MMO Serveris&rdquo;</h2>
+<p>The brief: stand up a private <em>Dark Age of Camelot</em> game server two ways and
+compare them.</p>
+<p><strong>Part A - manual install (Windows Server VM):</strong></p>
+<ul>
+<li>Created a Windows Server 2022 VM on Azure (<code>Standard_D2s_v3</code>, North Europe)</li>
+<li>Installed MariaDB 10.11, HeidiSQL, .NET 10 runtime, DOLServer 2.2.9.3910</li>
+<li>Patched <code>C:\DOLServer\config\serverconfig.xml</code> to use MySQL instead of
+SQLite, hard-coded <code>RegionIP</code> to the public IP, fixed an older <code>game.dll</code>
+version mismatch issue, dual-boxed two clients on the same Windows host</li>
+<li>End to end: about <strong>75 minutes</strong> of manual setup</li>
+</ul>
+<p><strong>Part B - Docker Compose (Ubuntu VM):</strong></p>
+<ul>
+<li>One <code>cloud-init.yml</code> that installs Docker, drops in a compose file, and
+brings up <code>mariadb:10.6</code> + <code>ghcr.io/opendaoc/opendaoc-core:latest</code></li>
+<li>End to end: about <strong>12 minutes</strong>, mostly just waiting for the gameserver
+container to compile its scripts on first start</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">gameserver</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">ghcr.io/opendaoc/opendaoc-core:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">opendaoc-server</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;10300:10300&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;10400:10400&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">SERVER_NAME</span>: <span style="color:#e6db74">&#34;Armandas&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">DB_CONNECTION_STRING</span>: <span style="color:#e6db74">&#34;server=db;port=3306;database=opendaoc;userid=root;password=***;treattinyasboolean=true&#34;</span>
+</span></span></code></pre></div><p>The Docker version was roughly <strong>6x faster</strong> to bring up than the manual
+Windows install - and it is fully reproducible. The trade-off: OpenDAoC
+expected a <code>v1.127</code> client while my lab client was <code>v1109</code>, which produced a
+receive-buffer overflow at login. Same kind of compatibility tax shows up in
+every &ldquo;lift-and-shift to container&rdquo; project I have seen.</p>
+<h2 id="lab-3---hugo--github-pages-this-site">Lab 3 - Hugo + GitHub Pages (this site)</h2>
+<p>Today&rsquo;s lab was a much smaller, much cheaper architecture:</p>
+<ul>
+<li>A <code>Standard_B1s</code> Ubuntu VM was supposed to host nginx with a custom HTML
+page, but <strong><code>B1s</code> was capacity-restricted in every European region</strong> for my
+student subscription - I fell back to <code>Standard_D2s_v3</code> in <strong>East US 2</strong></li>
+<li>Installed <code>nginx</code> + <code>neofetch</code>, replaced the default site with a custom
+<code>index.html</code> (&ldquo;Simple static page by Armandas Kaleinykas&hellip;&rdquo;), opened
+port 80 in the Azure NSG</li>
+<li>Then jumped over to GitHub Pages: created two repos
+<ul>
+<li><a href="https://github.com/Dason222/hugo"><code>Dason222/hugo</code></a> - private, source files</li>
+<li><a href="https://github.com/Dason222/dason222.github.io"><code>Dason222/dason222.github.io</code></a> - public, the rendered HTML, hooked into the source repo as a git submodule</li>
+</ul>
+</li>
+<li>Wired up the Beautiful Hugo theme, wrote this post and an
+<a href="/page/about/">About</a> page, pushed</li>
+<li>Tore down the Azure VM the same day - the GitHub Pages site is free to host
+forever</li>
+</ul>
+<h2 id="what-surprised-me">What surprised me</h2>
+<ol>
+<li>
+<p><strong>B-series VMs are gold dust right now.</strong> Eight straight regions returned
+<code>SkuNotAvailable - Capacity Restrictions</code> for <code>B1s</code>/<code>B1ms</code>/<code>B2s</code> on my
+subscription. The lab PDF assumes B1s availability; in practice I had to
+move to the slightly more expensive D-series.</p>
+</li>
+<li>
+<p><strong><code>az vm run-command invoke</code> is a hidden superpower.</strong> No SSH, no key
+wrangling, just shell scripts shipped straight into the VM. The entire
+nginx + neofetch installation was one CLI call.</p>
+</li>
+<li>
+<p><strong>Git submodules feel right for the Hugo + Pages workflow.</strong> The source
+repo can stay private while the rendered <code>public/</code> folder is its own
+commit history pushed to the <code>.github.io</code> repo - a clean separation of
+&ldquo;what I wrote&rdquo; vs &ldquo;what the world sees&rdquo;.</p>
+</li>
+</ol>
+<h2 id="what-is-next">What is next</h2>
+<p>The course continues, but my plan for the rest of the Azure for Students
+credit:</p>
+<ul>
+<li>Migrate this blog to <strong>Azure Static Web Apps</strong> (still free, plus serverless
+Functions for forms/comments)</li>
+<li>Put my OpenDAoC server on a <code>B2ats_v2</code> so a couple of friends can actually
+connect</li>
+</ul>
+<p>If you are also at VGTU and stuck on one of these labs, ping me on
+<a href="https://github.com/Dason222">github.com/Dason222</a>.</p>
 
           
           
@@ -379,13 +425,13 @@ nginx server block looks like this:</p>
         
           <div class="blog-categories">
             <span>Categories: </span>
-            <a href="https://dason222.github.io/categories/lab/">lab</a>&nbsp;
+            <a href="https://dason222.github.io/categories/lab/">lab</a>&nbsp;<a href="https://dason222.github.io/categories/recap/">recap</a>&nbsp;
           </div>
         
         
           <div class="blog-tags">
             <span>Tags: </span>
-            <a href="https://dason222.github.io/tags/azure/">azure</a>&nbsp;<a href="https://dason222.github.io/tags/nginx/">nginx</a>&nbsp;<a href="https://dason222.github.io/tags/linux/">linux</a>&nbsp;<a href="https://dason222.github.io/tags/cloud/">cloud</a>&nbsp;
+            <a href="https://dason222.github.io/tags/azure/">azure</a>&nbsp;<a href="https://dason222.github.io/tags/docker/">docker</a>&nbsp;<a href="https://dason222.github.io/tags/hugo/">hugo</a>&nbsp;<a href="https://dason222.github.io/tags/github-pages/">github-pages</a>&nbsp;<a href="https://dason222.github.io/tags/nginx/">nginx</a>&nbsp;<a href="https://dason222.github.io/tags/cloud/">cloud</a>&nbsp;<a href="https://dason222.github.io/tags/vgtu/">vgtu</a>&nbsp;
           </div>
         
 
@@ -395,8 +441,8 @@ nginx server block looks like this:</p>
             <h4 class="see-also">See also</h4>
             <div class="see-also-list">
               
-                <a href="/posts/three-cloud-labs-done/" class="see-also-item">
-                  <span class="see-also-item-title">Three cloud labs, three architectures - what I built this semester</span>
+                <a href="/posts/hello-cloud/" class="see-also-item">
+                  <span class="see-also-item-title">Hello Cloud - setting up nginx on Azure</span>
                   
                 </a>
               
@@ -407,23 +453,23 @@ nginx server block looks like this:</p>
 
       
         
-        
-          <a href="https://dason222.github.io/posts/three-cloud-labs-done/" class="nav-side-arrow nav-side-next" title="Three cloud labs, three architectures - what I built this semester" aria-label="Next Post: Three cloud labs, three architectures - what I built this semester">
-            <i class="fas fa-chevron-right"></i>
+          <a href="https://dason222.github.io/posts/hello-cloud/" class="nav-side-arrow nav-side-prev" title="Hello Cloud - setting up nginx on Azure" aria-label="Previous Post: Hello Cloud - setting up nginx on Azure">
+            <i class="fas fa-chevron-left"></i>
           </a>
+        
         
         <ul class="post-pager blog-post-pager">
           
-            <li class="pager-prev"></li>
+            <li class="pager-prev">
+              <a href="https://dason222.github.io/posts/hello-cloud/" data-bs-toggle="tooltip" data-bs-placement="top" title="Hello Cloud - setting up nginx on Azure"><i class="fas fa-chevron-left"></i> Previous Post</a>
+            </li>
           
           <li class="pager-center">
             
 
           </li>
           
-            <li class="pager-next">
-              <a href="https://dason222.github.io/posts/three-cloud-labs-done/" data-bs-toggle="tooltip" data-bs-placement="top" title="Three cloud labs, three architectures - what I built this semester">Next Post <i class="fas fa-chevron-right"></i></a>
-            </li>
+            <li class="pager-next"></li>
           
         </ul>
       
@@ -439,8 +485,10 @@ nginx server block looks like this:</p>
     </div>
     <nav class="toc-body"><nav id="TableOfContents">
   <ul>
-    <li><a href="#nginx-site-config">nginx site config</a></li>
-    <li><a href="#bringing-it-up">Bringing it up</a></li>
+    <li><a href="#lab-2---mmo-serveris">Lab 2 - &ldquo;MMO Serveris&rdquo;</a></li>
+    <li><a href="#lab-3---hugo--github-pages-this-site">Lab 3 - Hugo + GitHub Pages (this site)</a></li>
+    <li><a href="#what-surprised-me">What surprised me</a></li>
+    <li><a href="#what-is-next">What is next</a></li>
   </ul>
 </nav></nav>
   </div>

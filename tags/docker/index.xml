@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Armandas Kaleinykas - Cloud Lab Blog</title>
+    <link>https://dason222.github.io/tags/docker/</link>
+    <description>Recent content in Docker on Armandas Kaleinykas - Cloud Lab Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 May 2026 20:47:57 +0300</lastBuildDate>
+    <atom:link href="https://dason222.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Three cloud labs, three architectures - what I built this semester</title>
+      <link>https://dason222.github.io/posts/three-cloud-labs-done/</link>
+      <pubDate>Sun, 24 May 2026 20:47:57 +0300</pubDate>
+      <guid>https://dason222.github.io/posts/three-cloud-labs-done/</guid>
+      <description>&lt;p&gt;This week I wrapped up the third laboratory work for the &lt;strong&gt;VGTU &amp;ldquo;Debesų&#xA;kompiuterija&amp;rdquo;&lt;/strong&gt; (Cloud Computing) course. Looking back, the three labs together&#xA;form a neat tour of how modern web/game infrastructure is actually deployed -&#xA;from screws-and-bolts manual provisioning, through containers, all the way to&#xA;serverless static hosting. Here is a quick recap.&lt;/p&gt;&#xA;&lt;h2 id=&#34;lab-2---mmo-serveris&#34;&gt;Lab 2 - &amp;ldquo;MMO Serveris&amp;rdquo;&lt;/h2&gt;&#xA;&lt;p&gt;The brief: stand up a private &lt;em&gt;Dark Age of Camelot&lt;/em&gt; game server two ways and&#xA;compare them.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
